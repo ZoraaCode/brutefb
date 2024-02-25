@@ -186,8 +186,8 @@ class Facebook:
                 input(f' {DT}[{HU}!{DT}] login berhasil enter untuk ke menu')
                 self.chek_data()
                 break
-            except AttributeError as e: print(e)
-                #self.deled_dst()
+            except AttributeError as e: #print(e)
+                self.deled_dst()
                 
     def login_menu(self,cookie, token):
         try: id, name = self.chek_info(cookie, token)
